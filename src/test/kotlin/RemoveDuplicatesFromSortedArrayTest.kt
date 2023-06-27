@@ -2,7 +2,7 @@ import org.junit.jupiter.api.Assertions.assertArrayEquals
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
-class RemoveDuplicatesFromSortedArray {
+class RemoveDuplicatesFromSortedArrayTest {
 
     @Test
     fun `test first example from leetcode`() {
