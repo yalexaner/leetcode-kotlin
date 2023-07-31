@@ -1,8 +1,13 @@
 fun mergeAlternately(word1: String, word2: String): String {
-    return buildString {
-        repeat(kotlin.math.max(word1.length, word2.length)) { index ->
-            word1.getOrNull(index)?.let { append(it) }
-            word2.getOrNull(index)?.let { append(it) }
+    val builder = StringBuilder()
+    val maxLength = kotlin.math.max(word1.length, word2.length)
+    for (i in 0 until maxLength) {
+        if (i < word1.length) {
+            builder.append(word1[i])
+        }
+        if (i < word2.length) {
+            builder.append(word2[i])
         }
     }
+    return builder.toString()
 }
